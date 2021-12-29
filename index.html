@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+        integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <title> Flashcard </title>
+</head>
+<body>
+    <!-- Clear cards -->
+    <button id="clear" class="clear btn">
+        <i class="fas fa-trash"></i>
+        Clear Cards
+    </button>
+    
+    <!-- Add new card -->
+    <h1> FLASHCARD
+        <button id="show" class="btn btn-small">
+            <i class="fas fa-plus"></i> Add New Card
+        </button>
+    </h1>
+
+    <div id="cards-container" class="cards"></div>
+
+    <!-- Transfer card -->
+    <div class="navigation">
+        <button id="prev" class="nav-button">
+            <i class="fas fa-arrow-left"></i>
+        </button>
+  
+        <p id="current"></p>
+  
+        <button id="next" class="nav-button">
+            <i class="fas fa-arrow-right"></i>
+        </button>
+    </div>
+
+    <!-- Enter new card -->
+    <div id="add-container" class="add-container">
+        <h1> Add New Card
+            <!-- Cancel -->
+            <button id="hide" class="btn btn-small btn-ghost">
+                <i class="fas fa-times"></i>
+            </button>
+        </h1>
+  
+        <!-- Enter question -->
+        <div class="form-group">
+            <label for="question"> Question </label>
+            <textarea id="question" placeholder="Enter question..."></textarea>
+        </div>
+  
+        <!-- Enter answer -->
+        <div class="form-group">
+            <label for="answer"> Answer </label>
+            <textarea id="answer" placeholder="Enter answer..."></textarea>
+        </div>
+  
+        <!-- Add -->
+        <button id="add-card" class="btn">
+            <i class="fas fa-plus"></i> Add Card
+        </button>
+    </div>
+
+    <!-- Copyright -->
+    <p id="info">
+        Built by <a href="https://github.com/tranthaituananh">Tran Thai Tuan Anh</a> in 2021
+    </p>
+
+    <script src="script.js"></script>
+</body>
+</html>
