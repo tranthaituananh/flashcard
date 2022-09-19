@@ -195,7 +195,6 @@ h1 button {
 }
 
 p#info {
-    text-transform: uppercase;
     position: absolute;
 	right: 0;
 	bottom: 0;
@@ -205,4 +204,8 @@ p#info {
 a {
     color: #f6fa01;
     text-decoration: none;
+}
+
+a:hover {
+    color: red;
 }
